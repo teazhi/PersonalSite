@@ -1,5 +1,9 @@
 body {
-    background-color: #d2d3d3;
+    background-image: url(darkbackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+    margin: 40px;
     font-family: 'Outfit', sans-serif;
     font-family: 'Poppins', sans-serif;
     color: whitesmoke;
@@ -12,8 +16,8 @@ body {
 }
 .aboutsec {
     height: 100vh;
-    background: #bebebc;
-    border-radius: 30px;
+    background-image: url(lessdark.png);
+    border-radius: 25px;
     box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.75);
@@ -104,8 +108,8 @@ body {
     padding: 60px;
     height: 250px;
     width: 550px;
-    top: 130px;
-    left: 380px;
+    top: 100px;
+    left: 350px;
     text-align: center;
     box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.75);
@@ -141,8 +145,8 @@ body {
 
 .nextpagearrow {
     position: relative;
-    left: 685px;
-    bottom: -220px;
+    left: 655px;
+    bottom: -160px;
     height: 60px;
     animation: normal;
     border-radius: 10px;
