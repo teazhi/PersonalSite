@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!--font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Tevin Zhuo | Personal Site</title>
+</head>
+<body id="fullpage">
+    <section class="firstsec">
+        <div class="box">
+            <smalltext><em>Hello! 👋 My name is</em></smalltext>
+            <br> 
+            <bigtext>─ Tevin Zhuo ─</bigtext>
+
+            <br>
+
+            <!-- <name>Which section would you like to browse?</name> <br>   -->
+            <input class="gitimg" type="image" src="images/25231.png" name="githubimg" onclick="window.open('https://github.com/teazhi')">
+            <input class="linkedinimg" type="image" src="images/linkedinlogo.png" name="linkedinimg" onclick="window.open('https://www.linkedin.com/in/tevin-zhuo-b61711207/')">
+            <input class="instaimg" type="image" src="images/instagram.png" name="instagramimg" onclick="window.open('https://www.instagram.com/tevin.zhuo/')">
+        </div>
+        <input class="nextpagearrow" type="image" src="images/nextpagearrow.png" id="nextpgarrow" name="nextpgarrow" onclick=scrollToQuestionNode('abt');>
+    </section>
+    <section class="aboutsec" id="abt">
+        <div class="backgroundofmeimg">
+            <img class="meimg" src="images/newme.png">
+            <!-- <titletext>| Tevin Zhuo</titletext> -->
+        </div>
+    </section>
+
+    </div>
+    <script type="text/javascript">
+        window.onunload = function () {
+        window.scrollTo(0, 0);
+        }
+
+        function scrollToQuestionNode(id) {
+            const element = document.getElementById(id);
+            element.scrollIntoView({
+                block: 'end',  
+                behavior: "smooth" 
+            });
+            document.getElementById("fullpage").style.overflow = "scroll";
+        }
+        document.getElementsByName('nextpgarrow').addEventListener('click', scrollToQuestionNode);
+    </script>
+    
+</body>
+</html>
